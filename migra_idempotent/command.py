@@ -6,7 +6,7 @@ from contextlib import contextmanager
 
 from sqlbag import S
 
-from .migra import Migration
+from .migra_idempotent import Migration
 from .statements import UnsafeMigrationException
 
 

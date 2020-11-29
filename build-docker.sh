@@ -11,4 +11,4 @@ DOCKER_IMAGE="kahuang/migra:latest"
 
 printf "# Image: \e[1;37m${DOCKER_IMAGE}\e[0m\n\n"
 
-docker build -t kahuang/migra:latest .
+docker build --no-cache -t kahuang/migra:latest .

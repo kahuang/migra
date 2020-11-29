@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "migra_idempotent"
-version = "1.0"
+version = "1.7"
 authors = [ "Andrew Huang <k.andrew.huang@gmail.com>",]
 license = "Unlicense"
 readme = "README.md"
@@ -14,7 +14,7 @@ python = "*"
 sqlbag = "*"
 six = "*"
 # schemainspect_idempotent = {path="../schemainspect"}
-schemainspect_idempotent = ">=0.2"
+schemainspect_idempotent = ">=0.6"
 psycopg2-binary = { version="*", optional = true }
 
 [tool.poetry.dev-dependencies]
@@ -28,7 +28,7 @@ isort = "*"
 black = { version = ">=19.10b0", python=">=3.6" }
 
 [tool.poetry.scripts]
-migra = 'migra:do_command'
+migra = 'migra_idempotent:do_command'
 
 [tool.poetry.extras]
 pg = ["psycopg2-binary"]

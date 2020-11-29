@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from .changes import Changes
 from .command import do_command
-from .migra import Migration
+from .migra_idempotent import Migration
 from .statements import Statements, UnsafeMigrationException
 
 __all__ = [
