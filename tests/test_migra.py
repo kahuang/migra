@@ -7,7 +7,7 @@ import pytest
 
 # import yaml
 from pytest import raises
-from schemainspect import get_inspector
+from schemainspect_idempotent import get_inspector
 from sqlbag import S, load_sql_from_file, temporary_database
 
 from migra import Migration, Statements, UnsafeMigrationException

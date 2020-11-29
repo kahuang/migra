@@ -1,20 +1,20 @@
 [tool.poetry]
-name = "migra"
+name = "migra_idempotent"
 version = "1.0"
-authors = [ "Robert Lechte <robertlechte@gmail.com>",]
+authors = [ "Andrew Huang <k.andrew.huang@gmail.com>",]
 license = "Unlicense"
 readme = "README.md"
 description = "Like `diff` but for PostgreSQL schemas"
 
-repository = "https://github.com/djrobstep/migra"
+repository = "https://github.com/kahuang/migra"
 homepage = "https://migra.djrobstep.com/"
 
 [tool.poetry.dependencies]
 python = "*"
 sqlbag = "*"
 six = "*"
-# schemainspect = {path="../schemainspect"}
-schemainspect = ">=0.1.1603009162"
+# schemainspect_idempotent = {path="../schemainspect"}
+schemainspect_idempotent = ">=0.2"
 psycopg2-binary = { version="*", optional = true }
 
 [tool.poetry.dev-dependencies]

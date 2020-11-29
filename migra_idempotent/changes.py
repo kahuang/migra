@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from collections import OrderedDict as od
 from functools import partial
 
-import schemainspect
+import schemainspect_idempotent as schemainspect
 
 from .statements import Statements
 from .util import differences

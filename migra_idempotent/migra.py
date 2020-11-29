@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-from schemainspect import DBInspector, get_inspector
+from schemainspect_idempotent import DBInspector, get_inspector
 from sqlbag import raw_execute
 
 from .changes import Changes
